@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".controllers.ServiceOrderActivity">
+
+    <item
+        android:id="@+id/actionShare"
+        android:title="@string/lbl_share"
+        android:icon="@mipmap/ic_action_share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionFilter"
+        android:title="@string/lbl_filter"
+        android:icon="@drawable/ic_content_filter_list"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/actionFilterActive"
+                android:title="@string/lbl_filter_by_activated"
+                android:icon="@drawable/ic_action_toggle_check_box_outline_blank"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/actionFilterStored"
+                android:title="@string/lbl_filter_by_stored"
+                android:icon="@drawable/ic_action_toggle_check_box_outline_blank"
+                app:showAsAction="always" />
+
+        </menu>
+    </item>
+</menu>
